@@ -1,0 +1,4 @@
+{:deps {org.clojure/clojurescript {:mvn/version "1.10.520"}}
+ :aliases {:content {:main-opts ["-m" "cljs.main" "--optimizations" "advanced" "-co" "compiler-options.edn" "-o" "content.js" "-c" "pillard.content.core"]}
+           :background {:main-opts ["-m" "cljs.main" "--optimizations" "advanced" "-co" "compiler-options.edn" "-o" "background.js" "-c" "pillard.background.core"]}
+           :bookmarklet {:main-opts ["-m" "cljs.main" "--optimizations" "advanced" "-co" "compiler-options-bookmarklet.edn" "-o" "bookmarklet.js" "-c" "pillard.bookmarklet.core"]}}}
